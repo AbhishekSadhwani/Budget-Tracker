@@ -4,16 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Tracker</title>
+    <link rel="stylesheet" href="/master.css" type="text/css">
     <link rel="stylesheet" href="./styles.css" type="text/css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <a href="/" class="logo">
+                    <img src="../images/logo.png" alt="notNotion">
+                    <span>notNotion</span>
+                </a>
+                <nav>
+                    <ul class="nav-items">
+                        <li>
+                            <a href="/Quiz">Quiz</a>
+                        </li>
+                        <li>
+                            <a href="/Task Manager/">Todo List</a>
+                        </li>
+                        <li>
+                            <a href="/Kanban Application/">Progress Board</a>
+                        </li>
+                        <li class="active">
+                            <a href="/Budget Tracker/">Budget Manager</a>
+                        </li>
+                        <span class="newsletter">Join Newsletter</span>
+                    </ul>
+                </nav> 
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
         <div class="outer-wrap">
             <div class="inner-wrap">
-                <section class="heading">
+                <!-- <section class="heading">
                     <p class="title">notNotion</p>
                     <p class="subtitle">Easiest Way To Track Your Transactions!</p>
-                </section>
+                </section> -->
                 <section class="transactions">
                     <div class="add-transactions">
                         <h3>Add Transaction</h3>
@@ -52,8 +85,34 @@
                 </section>
             </div>
         </div>
-        
     </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="brand-name">
+                    <span>© notNotion by Shubham</span>
+                </div>
+                <div class="social-icons">
+                    <i class="bi bi-twitter social"></i>
+                    <i class="bi bi-linkedin social"></i>
+                    <i class="bi bi-youtube social"></i>
+                    <i class="bi bi-instagram social"></i>
+                </div>
+            </div>
+        </div>
+        <section class="modal">
+            <div class="newsletter-modal">
+                <p>Join Newsletter Now!</p>
+                <form action="">
+                    <input type="name" placeholder="Name" autocomplete="off">
+                    <input type="email" placeholder="Email" autocomplete="off">
+                    <input type="submit" class="submit" value="Submit">
+                </form>
+                <i class="bi bi-x-lg close"></i>
+            </div>
+        </section>
+    </footer>
+    <script src="/main.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
